@@ -15,6 +15,8 @@ class ofxGuiGroup : public ofxBaseGui {
 		ofxGuiGroup * setup(const std::string& collectionName = "", const std::string& filename = "settings.xml", float x = 10, float y = 10);
 		ofxGuiGroup * setup(const ofParameterGroup & parameters, const std::string& filename = "settings.xml", float x = 10, float y = 10);
 
+		void reloadSettings();
+	
 		void add(ofxBaseGui * element);
 		void add(const ofParameterGroup & parameters);
 

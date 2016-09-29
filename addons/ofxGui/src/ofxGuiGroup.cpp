@@ -112,6 +112,10 @@ ofxGuiGroup * ofxGuiGroup::setup(const ofParameterGroup & _parameters, const std
 	return this;
 }
 
+void ofxGuiGroup::reloadSettings() {
+	loadFromFile(filename);
+}
+
 void ofxGuiGroup::add(ofxBaseGui * element){
 	collection.push_back(element);
 
